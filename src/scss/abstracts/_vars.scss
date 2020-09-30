@@ -1,0 +1,21 @@
+$mainFont: 'Spartan', sans-serif;
+$secondaryFont: 'Gilroy', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
+
+$primaryClr: hsl(0, 0%, 63%);
+$secondaryClr: hsl(0, 0%, 27%);
+
+$showImage: true;
+$homeImage: url(../images/home-bg-min.jpg);
+$backgroundOpacity: 0.85;
+
+$fwNormal: 400;
+$fwBold: 700;
+
+$min_vw: 320px;
+$max_vw: 2560px;
+$min_font: 12px;
+$max_font: 50px;
