@@ -1,0 +1,13 @@
+.attribution {
+	color: #000000;
+	text-align: center;
+	a,
+	a:visited,
+	a:active {
+		color: $primaryClr;
+
+		&:hover {
+			color: rgba($color: $secondaryClr, $alpha: 0.5);
+		}
+	}
+}
