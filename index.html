@@ -4,59 +4,73 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Room Homepage Master</title>
-		<link rel="stylesheet" href="app.css" />
+		<link rel="stylesheet" href="app.css" id="css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		/>
+		<link
+			rel="icon"
+			href="./assets/images/favicon-32x32.png"
+			type="image/gif"
+			sizes="16x16"
 		/>
 	</head>
 	<body>
 		<section class="carousel-container" id="carousel-container">
 			<div class="carousel">
-				<div class="carousel__btns">
-					<button class="carousel__btn btn-left">
-						<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M13 0L1 12l12 12"
-								stroke="#FFF"
-								fill="none"
-								fill-rule="evenodd"
-							/>
-						</svg>
-					</button>
-					<button class="carousel__btn btn-right">
-						<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M1 0l12 12L1 24"
-								stroke="#FFF"
-								fill="none"
-								fill-rule="evenodd"
-							/>
-						</svg>
-					</button>
-				</div>
-
 				<div class="carousel__slide active">
 					<div class="carousel__hero">
-						<nav class="nav">
-							<ul class="nav__list">
-								<li class="nav__list-item">
-									<a href="#" class="nav__list-link">Home</a>
-								</li>
-								<li class="nav__list-item">
-									<a href="#" class="nav__list-link">Shop</a>
-								</li>
-								<li class="nav__list-item">
-									<a href="#" class="nav__list-link">About</a>
-								</li>
-								<li class="nav__list-item">
-									<a href="#" class="nav__list-link">Contact</a>
-								</li>
-							</ul>
-						</nav>
+						<div class="nav-container">
+							<div class="logo">
+								<img src="./assets/images/logo.svg" alt="" class="logo__img" />
+							</div>
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__list-item">
+										<a href="#" class="nav__list-link">Home</a>
+									</li>
+									<li class="nav__list-item">
+										<a href="#" class="nav__list-link">Shop</a>
+									</li>
+									<li class="nav__list-item">
+										<a href="#" class="nav__list-link">About</a>
+									</li>
+									<li class="nav__list-item">
+										<a href="#" class="nav__list-link">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="carousel__hero-img">
+							<img
+								src="./assets/images/desktop-image-hero-1.jpg"
+								class="carousel__hero-img-src"
+								alt="img1"
+							/>
+						</div>
 
-						<div class="hero__img">
-							<img src="./assets/images/desktop-image-hero-1.jpg" alt="img1" />
+						<div class="carousel__btns">
+							<button class="carousel__btn btn-left">
+								<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13 0L1 12l12 12"
+										stroke="#FFF"
+										fill="none"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</button>
+							<button class="carousel__btn btn-right">
+								<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1 0l12 12L1 24"
+										stroke="#FFF"
+										fill="none"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</button>
 						</div>
 					</div>
 					<div class="carousel__content">
@@ -84,6 +98,14 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a href="https://francuskimiroslav.com/">Francuski Miroslav</a>.
+		</div>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				/// css unique timestamp
