@@ -1,10 +1,11 @@
 .nav-container {
 	position: fixed;
 	padding: 60px;
-	width: inherit;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	transition: 0.5s all ease-in-out;
+	z-index: 50;
 
 	@include breakpoint-max(880) {
 		padding: 44px 30px;

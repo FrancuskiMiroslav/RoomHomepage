@@ -1,8 +1,16 @@
 .carousel {
 	width: 100%;
+	position: relative;
+	overflow: hidden;
 
 	&__slide {
 		display: flex;
+		transform: translateX(100%);
+		transition: all 0.5s ease-in-out, opacity 0.5s linear;
+		opacity: 0;
+		overflow: hidden;
+		height: 0;
+
 		@include breakpoint-max(880) {
 			flex-direction: column;
 
@@ -10,11 +18,31 @@
 				width: 100%;
 			}
 		}
+
+		&.active {
+			opacity: 1;
+			transform: translateX(0%);
+			height: inherit;
+
+			.carousel__hero {
+				transform: translateX(0%);
+			}
+
+			.carousel__title {
+				transform: translateX(0%);
+			}
+
+			.carousel__desc {
+				transform: translateX(0%);
+			}
+		}
 	}
 
 	&__hero {
 		position: relative;
 		width: 58.3%;
+		transition: all 0.4s linear 0.5s;
+		transform: translateX(-100%);
 	}
 
 	&__hero-img {
@@ -44,6 +72,8 @@
 	&__title {
 		font-size: 32px;
 		margin-bottom: 5.2%;
+		transition: all 0.5s linear 0.5s;
+		transform: translateX(200%);
 		@include fluid-typo(375px, 1440px, 26px, 32px);
 	}
 
@@ -52,6 +82,8 @@
 		line-height: 20px;
 		color: $primaryClr;
 		margin-bottom: 6.7%;
+		transition: all 0.7s linear 0.5s;
+		transform: translateY(-200%);
 		@include fluid-typo(375px, 1440px, 10px, 12px);
 	}
 
